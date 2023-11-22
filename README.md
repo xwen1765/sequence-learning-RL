@@ -20,7 +20,7 @@ The `optimize_model` function is a crucial component of the Deep Q-Network (DQN)
 The key mathematical concept in `optimize_model` is the computation of the loss between the Q-values predicted by the policy network and the target Q-values. The target Q-values are calculated using the Bellman equation:
 
 ### Q-values
-$\text{expected\_state\_action\_values} = (\text{next\_state\_values} \times \gamma) + \text{reward\_batch}$
+$$\text{expected\_state\_action\_values} = (\text{next\_state\_values} \times \gamma) + \text{reward\_batch}$$
 
 ### Loss Calculation
 
@@ -34,11 +34,9 @@ $L_\delta(a) =\begin{cases}\frac{1}{2} a^2 & \text{for } |a| \le \delta \\\delta
 This process involves zeroing the gradients, performing backpropagation, and then updating the weights with an optimizer (e.g., Adam).
 
 ## References
-
+- [PyTorch Tutorial](https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html)
 - [Deep Q-Networks (DQN) Introduction](https://example-link-to-dqn-intro.com)
 - [Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto](https://example-link-to-sutton-barto-book.com)
 - [Huber Loss Explanation](https://example-link-to-huber-loss.com)
 
 For a detailed understanding of DQN and its implementation, refer to the paper "Playing Atari with Deep Reinforcement Learning" by Mnih et al., available at [Link to Mnih et al. paper](https://example-link-to-mnih-paper.com).
-
-
