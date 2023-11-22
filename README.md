@@ -28,7 +28,7 @@ The Huber loss (smooth L1 loss) is used for training:
 
 $$\text{loss} = \text{smooth l1 loss}(\text{state action values}, \text{expected state action values})$$
 
-$$L_\delta(a) =\begin{cases}\frac{1}{2} a^2 & \text{for } |a| \le \delta \\ \delta (|a| - \frac{1}{2} \delta) & \text{otherwise}\end{cases}$$
+$$L_\delta(a) =\begin{cases}\frac{1}{2} a^2 & \text{for } |a| \le \delta\\ \delta (|a| - \frac{1}{2} \delta) & \text{otherwise}\end{cases}$$
 
 
 This process involves zeroing the gradients, performing backpropagation, and then updating the weights with an optimizer (e.g., Adam).
