@@ -20,13 +20,13 @@ The `optimize_model` function is a crucial component of the Deep Q-Network (DQN)
 The key mathematical concept in `optimize_model` is the computation of the loss between the Q-values predicted by the policy network and the target Q-values. The target Q-values are calculated using the Bellman equation:
 
 ### Q-values
-$$\text{expected\_state\_action\_values} = (\text{next\_state\_values} \times \gamma) + \text{reward\_batch}$$
+$$\text{expected state action values} = (\text{next state values} \times \gamma) + \text{reward batch}$$
 
 ### Loss Calculation
 
 The Huber loss (smooth L1 loss) is used for training:
 
-$\text{loss} = \text{smooth\_l1\_loss}(\text{state\_action\_values}, \text{expected\_state\_action\_values})$
+$\text{loss} = \text{smooth l1 loss}(\text{state action values}, \text{expected state action values})$
 
 $L_\delta(a) =\begin{cases}\frac{1}{2} a^2 & \text{for } |a| \le \delta \\\delta (|a| - \frac{1}{2} \delta) & \text{otherwise}\end{cases}$
 
