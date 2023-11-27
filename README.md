@@ -37,7 +37,7 @@ Where:
 
 But we don't know what would be a good policy to make when we don't know the environment. If we know every consequence of actions $Q^*$, this policy can be constructed as:
 
-\[ \pi^* (s) = \arg\max_a Q^*(s, a) \]
+$$ \pi^* (s) = \arg\max_a Q^*(s, a) $$
 
 But we don't know, we can only make approximations of the world
 
@@ -45,7 +45,7 @@ But we don't know, we can only make approximations of the world
 
 The Huber loss (smooth L1 loss) is used for training:
 
-$$L_\delta(a) =\begin{cases}\frac{1}{2} a^2 & \text{for } |a| \le \delta\\ \delta (|a| - \frac{1}{2} \delta) & \text{otherwise}\end{cases}$$
+$$L_\delta(a) =\begin{cases}\frac{1}{2} a^2 & \text{for } |a| \le \delta\\\\\\ \delta (|a| - \frac{1}{2} \delta) & \text{otherwise}\end{cases}$$
 
 
 This process involves zeroing the gradients, performing backpropagation, and then updating the weights with an optimizer (e.g., Adam).
