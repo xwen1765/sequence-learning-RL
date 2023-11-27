@@ -24,16 +24,16 @@ The idea of reinforcement learning is based on following relations:
 
 $$ Q^* : \text{State} \times \text{Action} \rightarrow \mathbb{R} $$
 
-The optimal action-value function \( Q^* \) is defined as the maximum expected return achievable by following any strategy, after seeing some state \( s \) and then taking some action \( a \), specifically:
+The optimal action-value function  $ Q^*  $ is defined as the maximum expected return achievable by following any strategy, after seeing some state  $ s  $ and then taking some action  $ a  $, specifically:
 
 \[ Q^*(s, a) = \max_{\pi} \mathbb{E} [R_t | s_t = s, a_t = a, \pi] \]
 
 Where:
-- \( Q^*(s, a) \) is the optimal action-value function.
-- \( \pi \) represents a policy.
-- \( R_t \) is the return (total discounted reward) at time \( t \).
-- \( s_t \) and \( a_t \) are the state and action at time \( t \) respectively.
-- \( \mathbb{E} \) is the expected value given that the agent follows policy \( \pi \).
+- $ Q^*(s, a) $ is the optimal action-value function.
+-  $ \pi  $ represents a policy.
+-  $ R_t  $ is the return (total discounted reward) at time  $ t  $.
+-  $ s_t  $ and  $ a_t  $ are the state and action at time  $ t  $ respectively.
+-  $ \mathbb{E}  $ is the expected value given that the agent follows policy  $ \pi  $.
 
 But we don't know what would be a good policy to make when we don't know the environment. If we know every consequence of actions $Q^*$, this policy can be constructed as:
 
