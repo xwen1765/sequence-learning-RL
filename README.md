@@ -26,7 +26,7 @@ $$ Q^* : \text{State} \times \text{Action} \rightarrow \mathbb{R} $$
 
 The optimal action-value function  $ Q^*  $ is defined as the maximum expected return achievable by following any strategy, after seeing some state  $ s  $ and then taking some action  $ a  $, specifically:
 
-\[ Q^*(s, a) = \max_{\pi} \mathbb{E} [R_t | s_t = s, a_t = a, \pi] \]
+$$ Q^*(s, a) = \max_{\pi} \mathbb{E} [R_t | s_t = s, a_t = a, \pi] $$
 
 Where:
 - $Q^*(s, a)$ is the optimal action-value function.
